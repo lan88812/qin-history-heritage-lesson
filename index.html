@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#1c3b35">
+  <title>以遗产为证，探秦统一之道｜第9课文化遗产知识图谱互动课堂 V1.16</title>
+  <link rel="stylesheet" href="./v116.css">
+</head>
+<body>
+<div class="app-shell">
+ <header class="topbar">
+   <div class="brand-mark">秦<span>·</span>证</div>
+   <div class="brand-text"><b>以遗产为证，探秦统一之道</b><span>人教版七年级上册 · 第9课《秦统一中国》 · 文化遗产知识图谱课堂</span></div>
+   <div class="top-actions"><span id="serverStatus" class="server-state waiting"><span class="status-dot"></span>正在检测知识图谱快照</span><button type="button" id="teacherOpen" class="btn btn-outline">教师控制台</button><button type="button" id="projectorBtn" class="btn btn-outline">课堂投屏</button></div>
+ </header>
+ <div class="layout">
+  <aside class="sidebar">
+   <div class="section-kicker">课堂学习路径 · 45分钟</div>
+   <div id="stageNav" class="stage-nav"></div>
+   <div class="side-note"><div class="side-note-icon">◎</div><strong>从文物到证据</strong><p>图谱帮助我们找到知识联系；历史结论还需要经过证据分析与解释。</p></div>
+   <button type="button" class="link-btn" id="legacyBtn" style="display:none">查看原 V1.15 课件 ↗</button>
+  </aside>
+  <main class="main-column" id="mainColumn">
+    <section class="lesson-header">
+      <div class="eyebrow" id="stageEyebrow">第 01 阶段 / 遗产观察</div>
+      <div class="lesson-heading"><div><h1 id="stageTitle">从兵马俑开始：遗产能告诉我们什么？</h1><p id="stageSubtitle">从历史遗存进入秦朝的课堂探究</p></div><div id="stageDuration" class="minutes">5 <span>分钟</span></div></div>
+      <div class="concept-question"><span>本环节核心问题</span><strong id="stageQuestion">一项文化遗产，能够证明什么？又不能证明什么？</strong></div>
+    </section>
+    <div class="work-grid">
+      <section class="evidence-panel paper-card"><div class="panel-top"><div class="panel-kicker">01 · 教材原始证据</div><span id="materialPageTag" class="tiny-pill">教材第52页</span></div><div class="material-photo-wrap"><img id="materialPhoto" alt="教材证据图片" src="./assets/archaeology.jpg"><button type="button" id="zoomSourceBtn" class="photo-zoom">↗ 查看教材原页</button></div><div class="evidence-copy"><div id="materialTitle" class="material-title">兵马俑考古发掘现场</div><p id="materialContext"></p><div class="source-pill" id="materialSource"></div></div><div class="panel-foot"><span>图片源自本次上传的教材照片</span><button type="button" class="inline-action" id="materialAdd">＋ 收入证据篮</button></div></section>
+      <section class="explore-panel paper-card"><div class="panel-top"><div class="panel-kicker">02 · 语义联系探索</div><span class="tiny-pill" id="graphStageTag">CIDOC CRM · 事件中心</span></div><div class="graph-schematic" id="stageGraphVisual" aria-label="本环节语义网络示意"></div><div class="graph-summary"><span class="graph-globe">⌘</span><div><strong id="graphCueTitle">从兵马俑追溯秦代历史背景</strong><p id="graphCueText">选择文化遗产，以它为起点查找相关事件、时空、人物与教材证据。</p></div></div><div class="graph-actions"><button type="button" class="btn btn-primary" id="openSeedGraph">打开本环节知识子图 <span>↗</span></button><button type="button" class="btn btn-outline" id="openFullGraph">完整67节点图谱</button></div><div id="graphConnectionHint" class="graph-connection-hint">图谱内容来自 Neo4j 数据快照；需要更新时重新导出数据并发布。</div></section>
+    </div>
+    <section class="activity-panel paper-card"><div class="panel-top"><div><div class="panel-kicker">03 · 学习任务</div><h2 id="activityHeading">判断：材料能支持哪些历史认识？</h2></div><div class="task-counter">探究记录 <strong id="attemptCount">0</strong> 次</div></div><div id="activityContent"></div><div class="activity-footer"><div id="feedbackArea" class="feedback-box" aria-live="polite">请先观察教材，再完成学习任务。</div><div class="activity-buttons"><button type="button" id="hintBtn" class="btn btn-outline">获取分层提示</button><button type="button" id="checkBtn" class="btn btn-primary">检查我的探究</button><button type="button" id="nextStageBtn" class="btn btn-next" disabled>进入下一环节 →</button></div></div></section>
+    <footer class="lesson-bottom"><span>学习路径：遗产观察 → 图谱探索 → 证据分析 → 联系建构 → 历史解释</span><span>V1.16 · 教学原型</span></footer>
+  </main>
+  <aside class="rightbar"><div class="right-section"><div class="right-head"><span>本课研究任务</span><small>问题驱动</small></div><blockquote>秦是如何实现并巩固国家统一的？文化遗产能提供哪些历史证据？</blockquote></div><div class="right-section"><div class="right-head"><span>学习进度</span><small id="progressText">0 / 5</small></div><div class="progress-track"><div id="progressFill"></div></div><p class="quiet" id="progressCaption">每完成一个证据任务，就形成一条学习记录。</p></div><div class="right-section"><div class="right-head"><span>文化遗产证据篮</span><small id="evidenceCount">0 项</small></div><div id="evidenceList" class="basket-list"><div class="basket-empty">尚未选择证据。请点击“收入证据篮”，保存用于最终历史解释的材料。</div></div></div><div class="right-section"><div class="right-head"><span>图谱工具</span><small>Neo4j API</small></div><button type="button" class="side-primary" id="sideGraphButton">◈ 进入知识图谱探索台</button><div id="graphStats" class="data-summary">等待读取知识图谱…</div><div class="quiet small-space">图谱提示关联，不自动证明因果；请回到教材和实物证据核对。</div></div><div class="right-section teacher-mini"><div class="right-head"><span>课堂观察指标</span></div><div class="metrics"><div><strong id="metricAttempts">0</strong><span>任务尝试</span></div><div><strong id="metricHints">0</strong><span>分层提示</span></div><div><strong id="metricGraph">0</strong><span>图谱探索</span></div></div></div></aside>
+ </div>
+</div>
+<dialog id="sourceDialog" class="source-modal"><div class="modal-head"><div><div class="modal-kicker">教材原页 · 可放大查证</div><h2 id="sourceDialogTitle">教材证据</h2></div><button class="icon-close" type="button" id="sourceClose" aria-label="关闭">×</button></div><div class="source-content"><img id="sourceFullImage" alt="教材原页"></div><div class="modal-note">材料来源：用户提供的人教版《中国历史》第9课教材照片；图片用于课堂证据阅读。</div></dialog>
+<dialog id="graphDialog" class="graph-modal"><div class="modal-head graph-modal-head"><div><div class="modal-kicker">知识图谱探索台 / Knowledge Graph</div><h2 id="graphDialogTitle">事件中心 · 文化遗产语义网络</h2></div><div class="modal-tools"><span id="kgLiveStatus" class="tiny-pill">等待 API</span><button class="icon-close" type="button" id="graphClose" aria-label="关闭">×</button></div></div><div class="graph-toolbar"><div class="graph-search-wrap"><input id="kgSearch" placeholder="搜索：灵渠、秦始皇陵、统一文字…" autocomplete="off" aria-label="搜索知识节点"><div id="kgSearchList" class="kg-search-list" hidden></div></div><button type="button" class="btn btn-outline" id="kgAllBtn">显示全图</button><label class="depth-control">探索层级 <select id="kgDepth"><option value="1">1层</option><option value="2" selected>2层</option></select></label><button type="button" class="btn btn-outline" id="kgBack">返回上一视图</button><span class="graph-toolbar-right" id="kgScope">67节点 / 107关系</span></div><div class="graph-modal-body"><div class="kg-main"><svg id="kgSvg" viewBox="0 0 1000 690" role="img" aria-label="Neo4j图谱可点击节点，探索关联"><g id="kgView"></g></svg><div class="kg-ctrl"><button id="kgIn" type="button" aria-label="放大图谱">＋</button><button id="kgOut" type="button" aria-label="缩小图谱">－</button><button id="kgFit" type="button">适应</button></div><div id="kgNotice" class="kg-notice">选择节点，查看教材证据和有向语义关系。</div></div><aside id="kgInfo" class="kg-info"><h3>选择一个知识节点</h3><p>本图谱通过 Node.js API 读取你已经建立的 Neo4j 数据库。箭头方向保持原始 CIDOC CRM 数据方向。</p></aside></div><div class="graph-modal-foot"><div id="kgLegend" class="legend"></div><div class="quiet">全图节点较多，课堂教学建议使用1—2层局部子图。</div></div></dialog>
+<dialog id="teacherDialog" class="teacher-modal"><div class="modal-head"><div><div class="modal-kicker">教师课堂调度 · 本机记录</div><h2>45分钟课堂控制台</h2></div><button class="icon-close" type="button" id="teacherClose">×</button></div><div class="teacher-content"><p class="quiet">教师可以直接跳转环节，不影响学生已完成的历史证据记录。本课交互是规则反馈，不使用生成式 AI 评分。</p><div class="teacher-stats" id="teacherStats"></div><h3>教学环节调度</h3><div id="teacherStageButtons" class="teacher-stage-grid"></div><div class="teacher-options"><button type="button" id="exportRecord" class="btn btn-outline">导出本机学习记录 JSON</button><button type="button" id="resetRecord" class="btn btn-danger">清空本机学习记录</button></div><h3>教师评价建议</h3><p class="teacher-rubric">观察四个维度：①能否区分直接观察与历史推断；②能否根据文化遗产定位事件与时空；③能否建立证据—措施—作用的合理联系；④能否指出证据的适用边界。最终文字解释需要教师审核，不宜仅凭字数评分。</p></div></dialog>
+<script type="module" src="./v116.js"></script>
+</body>
+</html>
